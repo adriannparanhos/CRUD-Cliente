@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>teste</title>
+        <script src="./public/js/utils/funcoesGerais.js"></script>
+        <script src="./public/js/utils/requisicoes.js"></script>
+        <script src="./public/js/autenticacao/login.js"></script>
+        <script src="./public/js/autenticacao/cadastrar.js"></script>
+        <link rel="stylesheet" href="./public/css/style.css">
+
+
+
+    </head>
+    <body>
+        
+        <div>
+            <form method="POST" id="form_login">
+                <h1>Logar</h1>
+                <label for="">username</label>
+                <input type="text" name="username" id="username">
+    
+                <label for="">Password</label>
+                <input type="password" name="password" id="password">
+
+                <input type="submit">
+            </form>
+
+            <form method="POST" id="form_cadastrar">
+                <h1>Cadastrar</h1>
+                <label for="">cadastrar</label>
+                <input type="text" name="username_cadastrar" id="username_cadastrar">
+    
+                <label for="">Password</label>
+                <input type="password" name="password_cadastrar" id="password_cadastrar">
+                <input type="submit">
+            </form>
+        </div>
+
+    </body>
+    </html>
