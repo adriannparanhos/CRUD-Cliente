@@ -1,0 +1,47 @@
+#container_editar_cliente {
+    top: 0;
+    left: 0;
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+    position: fixed;
+
+    height: 100vh;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    opacity: 0.9;
+
+    color: white;
+}
+
+#container_criar_enderecos {
+    top: 0;
+    left: 0;
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+    position: fixed;
+
+    height: 100vh;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    opacity: 0.9;
+
+    color: white;
+}
