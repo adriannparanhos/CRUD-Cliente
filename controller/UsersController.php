@@ -8,6 +8,8 @@
         }
 
         public function cadastrar($parametros) {
+ 
+
             $parametrosPost = parametrosJson() + parametrosPost();
             if(!verificarParametrosObrigatorios($parametrosPost, ["username", "password"]));
             $nomeusers = $this->users->listarTodos($parametrosPost["username"]);

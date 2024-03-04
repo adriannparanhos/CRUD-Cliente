@@ -8,6 +8,8 @@ require_once("./models/Address.php");
 require_once("./models/Client.php");
 require_once("./models/Users.php");
 
+
+
 class Rotas {
     
     private $classes;
@@ -103,6 +105,10 @@ $classes = [
         "classe" => "Client",
         "controller" => "ClientController",
     ],
+    "address" => [
+        "classe" => "Address",
+        "controller" => "AddressController",
+    ],
 ];
 
 $rotas = [
@@ -122,6 +128,26 @@ $rotas = [
         "rotas" => [
             "POST" => "cadastrar",
             "GET" => "buscarTodos"
+        ]
+    ],
+    "client/:id" => [
+        "rotas" => [
+            "GET" => "buscarPorId",
+            "PUT" => "atualizar",
+            "DELETE" => "deletar"
+        ]
+    ],
+    "address" => [
+        "rotas" => [
+            "POST" => "cadastrar",
+            "GET" => "buscarTodos"
+        ]
+    ],
+    "address/:id" => [
+        "rotas" => [
+            "GET" => "buscarPorId",
+            "PUT" => "atualizar",
+            "DELETE" => "deletar"
         ]
     ],
 
